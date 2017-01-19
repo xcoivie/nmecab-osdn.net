@@ -12,7 +12,18 @@ namespace NMeCab
 {
     public class MeCabParam
     {
-        public string DicDir { get; set; }
+        private string _dicDir;
+        public string DicDir
+        {
+            get {
+                if (_dicDir == null)
+                {
+                    _dicDir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"ThirdPartyApi\NMecabLib\dic\ipadic\");
+                }
+                return _dicDir;
+            }
+            set { _dicDir = value; }
+        }
 
         public string[] UserDic { get; set; }
 
