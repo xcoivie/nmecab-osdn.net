@@ -9,7 +9,7 @@
       <Value Profile="(Default)">lattice</Value>
     </Setting>
     <Setting Name="DicDir" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">dic</Value>
+      <Value Profile="(Default)">ThirdPartyApi\NMecabData\dic\ipadic</Value>
     </Setting>
   </Settings>
 </SettingsFile>

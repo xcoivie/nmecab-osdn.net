@@ -48,6 +48,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="dic\ipadic\char.bin" />
+    <None Include="dic\ipadic\dicrc" />
+    <None Include="dic\ipadic\matrix.bin" />
+    <None Include="dic\ipadic\sys.dic" />
+    <None Include="dic\ipadic\unk.dic" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LibNMeCab\LibNMeCab.csproj">

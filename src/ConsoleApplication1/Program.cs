@@ -11,8 +11,12 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            MeCabTagger tagger = MeCabTagger.Create();
-            string searchString = @"もろみ純米吟醸生酒  もろみ純米吟醸生酒 Shinomine しのみね";
+            MeCabParam mcp = new MeCabParam();
+            mcp.DicDir = @"D:\github\nmecab-osdn.net\src\ConsoleApplication1\dic\ipadic\";
+            mcp.OutputFormatType = "wakati";
+            MeCabTagger tagger = MeCabTagger.Create(mcp);
+            ;
+            string searchString = @"ConsoleApplication1";// @"黄金井酒造株式会社";
             //@"大吟醸";
             string result = tagger.Parse(searchString);
 
